@@ -1,0 +1,17 @@
+const messages = [
+    "Learning DevOps, AWS, and cloud at LevelUp!",
+    "LevelUp: DevOps, AWS, cloud.",
+    "DevOps, AWS, cloud @ LevelUp.",
+    "LevelUp teaches DevOps, AWS, cloud.",
+    "Mastering DevOps, AWS, @ LevelUp.",
+    "LevelUp: DevOps, AWS, cloud skills.",
+    "At LevelUp, learning DevOps, AWS, cloud.",
+    "LevelUp = DevOps, AWS, cloud learning.",
+    "DevOps, AWS, cloud with LevelUp.",
+    "LevelUp: DevOps, AWS, cloud mastery."
+];
+
+export async function handler(event) {
+    const message = messages[Math.floor(Math.random() * messages.length)];
+    return message;
+}
